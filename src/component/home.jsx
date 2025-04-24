@@ -104,16 +104,42 @@ const home = () => {
           <HomeNotice></HomeNotice>
           <HomeSlider />
           <HomeLinks></HomeLinks>
-          <div className="reative my-$mg text-center text-2xl font-bold text-$btn-text">
-          </div>
+          <div className="reative my-$mg text-center text-2xl font-bold text-$btn-text"></div>
           {/* <HomeTaskHall showPopup={showPopup} userData={data}></HomeTaskHall> */}
           <br />
-          <div className="  align-items-center" style={{backgroundColor: "#fff2b5", borderRadius: '10px', color: '#130040', padding: '15px',textAlign: "center", fontSize: "20px", fontWeight: '600'}}>
-            <div className="justify-content-center" style={{backgroundImage: 'url(src/assets/images/stopwatch.png)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundSize: '50px', backgroundPosition: 'right bottom'}}>
-            <CountdownTimer targetDate={targetDate} />
-            <h5 className="text-sm">{t("task_reset_countdown")}</h5>
+          <div
+            className="  align-items-center"
+            style={{
+              backgroundColor: "#fff2b5",
+              borderRadius: "10px",
+              color: "#130040",
+              padding: "15px",
+              textAlign: "center",
+              fontSize: "20px",
+              fontWeight: "600",
+            }}
+          >
+            <div
+              className="justify-content-center"
+              style={{
+                backgroundImage: "url(src/assets/images/stopwatch.png)",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "right bottom",
+              }}
+            >
+              <CountdownTimer targetDate={targetDate} />
+              <h5 className="text-sm">{t("task_reset_countdown")}</h5>
             </div>
-            <div className="text-end" style={{fontSize: '50px', display: 'relative', top: '0', zIndex: '1'}}></div>
+            <div
+              className="text-end"
+              style={{
+                fontSize: "50px",
+                display: "relative",
+                top: "0",
+                zIndex: "1",
+              }}
+            ></div>
           </div>
           <VipTaskHall showPopup={showPopup} userData={data}></VipTaskHall>
           <HomeMemberList></HomeMemberList>

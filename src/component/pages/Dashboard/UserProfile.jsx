@@ -1,7 +1,7 @@
 import userProfile from "../../../assets/images/features/user.webp";
 import "./dashboard.css";
 import bitcoin from "../../../assets/images/coins/Bitcoin.png";
-import Ethereum from "../../../assets/images/coins/Ethereum.jpg";
+import bolt from "../../../assets/images/features/bolt.png";
 
 const UserProfile = () => {
   return (
@@ -27,12 +27,14 @@ const UserProfile = () => {
           </div>
         </div>
         {/* RIGHT SIDE COIN DETAILS */}
-        <div className="d-flex align-items-center gap-2 gradient-black rounded">
+        <div className="d-flex align-items-center gap-2 p-2 gradient-black rounded">
           <div>
             <h2 className="fs-6 fw-bold text-end" style={{ color: "yellow" }}>
               0.00000343345
             </h2>
-            <p className="fw-semibold text-end">1BTC = 93,569.73 USD</p>
+            <p style={{ fontSize: "10px" }} className="fw-semibold text-end">
+              1BTC = 93,569.73 USD
+            </p>
           </div>
           <div>
             <img
@@ -46,17 +48,19 @@ const UserProfile = () => {
       </div>
       <div className="d-flex align-items-center border-right justify-content-end">
         {/* RIGHT SIDE COIN DETAILS */}
-        <div className="d-flex align-items-center gap-2 gradient-black rounded">
+        <div className="d-flex align-items-center gap-2 p-2 gradient-black rounded">
           <div>
             <h2 className="fs-6 fw-bold text-end" style={{ color: "yellow" }}>
               0.00000343345
             </h2>
-            <p className="fw-semibold text-end">1BTC = 93,569.73 USD</p>
+            <p style={{ fontSize: "10px" }} className="fw-semibold text-end">
+              1BTC = 93,569.73 USD
+            </p>
           </div>
           <div>
             <img
               style={{ height: "2rem", width: "2rem" }}
-              src={Ethereum}
+              src={bolt}
               alt="Ethereum"
               className="rounded-circle"
             />

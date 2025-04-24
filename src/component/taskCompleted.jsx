@@ -80,29 +80,56 @@ const Task = () => {
         ></Header>
         <div task-page="" className="mission-wrap mission-wrap21">
           <div task-page="" className="mission-wrap-content">
-          <div
+            <div
               id="timer"
               task-page=""
               className="text-center"
-              style={{ display: "flex", 
-                width: '100%',
-                justifyContent: 'flex-end'
+              style={{
+                display: "flex",
+                width: "100%",
+                justifyContent: "flex-end",
               }}
             >
-              <div task-page="" className="loading-time d-flex" style={{ backgroundColor: 'black', borderRadius: '20px', padding: '10px 20px', marginBottom: '5px' }}>
-                <div task-page="" className="i-gala:clock" style={{marginRight: '10px', fontSize: '1.5rem'}}></div>
-                <span task-page="" style={{marginRight: '10px'}}>{t("task_reset")}</span>{" "}
+              <div
+                task-page=""
+                className="loading-time d-flex"
+                style={{
+                  backgroundColor: "black",
+                  borderRadius: "20px",
+                  padding: "10px 20px",
+                  marginBottom: "5px",
+                }}
+              >
+                <div
+                  task-page=""
+                  className="i-gala:clock"
+                  style={{ marginRight: "10px", fontSize: "1.5rem" }}
+                ></div>
+                <span task-page="" style={{ marginRight: "10px" }}>
+                  {t("task_reset")}
+                </span>{" "}
                 <span id="timeCount">
                   <CountdownTimer targetDate={targetDate} />
                 </span>
               </div>
             </div>
             {/* timer ends */}
-            <div task-page="" className="top-info" style={{ backgroundColor: '#ffed9a', color: 'black', backgroundImage: 'url(src/assets/images/stopwatch.png)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundSize: '50px', backgroundPosition: 'right bottom'}}>
+            <div
+              task-page=""
+              className="top-info"
+              style={{
+                backgroundColor: "#ffed9a",
+                color: "black",
+                backgroundImage: "url(src/assets/images/stopwatch.png)",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "right bottom",
+              }}
+            >
               <div task-page="" className="data-content">
                 <div task-page="" className="col">
                   <div task-page="" className="title">
-                  Mining For Today
+                    Mining For Today
                   </div>
                   <div task-page="" className="value">
                     {data?.product && data.withdraw_status > 0 ? 1 : 0}
@@ -110,7 +137,7 @@ const Task = () => {
                 </div>
                 <div task-page="" className="col">
                   <div task-page="" className="title">
-                  Todays Remaining Mining
+                    Todays Remaining Mining
                   </div>
                   <div task-page="" className="value">
                     {data?.product && data.withdraw_status ? "1" : "0"}
@@ -122,7 +149,11 @@ const Task = () => {
             <div
               task-page=""
               className=":uno: container-card relative rd-$card-radius p-$mg c-$btn-text"
-              style={{paddingRight: '0px', paddingLeft: '0px', paddingTop: '0px'}}
+              style={{
+                paddingRight: "0px",
+                paddingLeft: "0px",
+                paddingTop: "0px",
+              }}
             >
               <div className="tabs2 ">
                 <Link className=":uno: tab-item tab2  non-active2" to="/task">
