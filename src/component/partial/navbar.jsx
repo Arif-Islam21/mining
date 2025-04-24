@@ -25,7 +25,7 @@ const Navbar = () => {
         <NavLink
           to="/home"
           className="tab-item"
-          style={{ backgroundColor: "#346dff" }}
+          style={{ backgroundColor: "#0b3ab3" }}
         >
           <div tab-btn="" id="tabItem" className="tab-item-inner">
             <div
@@ -40,7 +40,7 @@ const Navbar = () => {
         <NavLink
           to="/user-dashboard"
           className="tab-item"
-          style={{ backgroundColor: "#346dff" }}
+          style={{ backgroundColor: "#0b3ab3" }}
         >
           <div tab-btn="" id="tabItem" className="tab-item-inner">
             <div
@@ -55,7 +55,7 @@ const Navbar = () => {
         <NavLink
           to="/task"
           className="tab-item"
-          style={{ backgroundColor: "#346dff" }}
+          style={{ backgroundColor: "#0b3ab3" }}
         >
           <div tab-btn="" id="tabItem" className="tab-item-inner">
             <div
@@ -70,7 +70,7 @@ const Navbar = () => {
         <NavLink
           to="/team"
           className="tab-item"
-          style={{ backgroundColor: "#346dff" }}
+          style={{ backgroundColor: "#0b3ab3" }}
         >
           <div tab-btn="" id="tabItem" className="tab-item-inner">
             <div
@@ -86,7 +86,7 @@ const Navbar = () => {
         <NavLink
           to="/vip"
           className="tab-item"
-          style={{ backgroundColor: "#346dff" }}
+          style={{ backgroundColor: "#0b3ab3" }}
         >
           <div tab-btn="" id="tabItem" className="tab-item-inner">
             <div
@@ -102,7 +102,7 @@ const Navbar = () => {
         <NavLink
           to="/me"
           className="tab-item"
-          style={{ backgroundColor: "#346dff" }}
+          style={{ backgroundColor: "#0b3ab3" }}
         >
           <div tab-btn="" id="tabItem" className="tab-item-inner">
             <div

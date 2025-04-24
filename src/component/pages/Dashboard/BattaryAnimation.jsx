@@ -4,18 +4,23 @@ const BattaryAnimation = () => {
   const totalBatteries = 50;
 
   return (
-    <div className="battery-wrapper">
-      <div className="battery-box">
-        <div className="battery-grid">
-          {[...Array(totalBatteries)].map((_, index) => (
-            <div className="battery" key={index}>
+    <div className="">
+      <div className="battery-wrapper">
+        <div className="battery-box">
+          <div className="battery-grid">
+            {[...Array(totalBatteries)].map((_, index) => (
               <div
-                className="charge"
-                style={{ animationDelay: `${index * 0.6}s` }}
-              />
-              <div className="lightning">⚡</div>
-            </div>
-          ))}
+                className="battery d-flex align-items-center justify-content-center"
+                key={index}
+              >
+                <div
+                  className="charge"
+                  style={{ animationDelay: `${index * 0.6}s` }}
+                />
+                <div className="lightning">⚡</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

@@ -24903,7 +24903,7 @@ textarea {
 }
 .a-t-26 .nav-bar-wrap.is-scroll-state:before {
   content: "";
-  background-color: #346dff;
+  background-color: #203d8a;
   transition: 0.5s all ease;
 }
 .a-t-26 .layout-tab-bar {
@@ -28399,7 +28399,7 @@ html {
   --text-gray: #999;
   --primary: #e1e9ff;
   --primary-light: #e7f6f2;
-  --bg: #0148ff;
+  --bg: #283B80;
   --bg-card: #fff;
   --btn-bg: #483838;
   --btn-bg2: #a9af7e;
@@ -28415,3 +28415,9 @@ html {
   opacity: 1;
   visibility: visible;
 } */
+
+@media (min-width: 992px) {
+  .lg-max-w-md {
+    max-width: 28rem;
+  }
+}
