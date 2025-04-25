@@ -29,7 +29,7 @@ const UserProfile = () => {
         {/* RIGHT SIDE COIN DETAILS */}
         <div className="d-flex align-items-center gap-2 p-2 gradient-black rounded">
           <div>
-            <h2 className="fs-6 fw-bold text-end" style={{ color: "yellow" }}>
+            <h2 className="fs-6 fw-bold text-end" style={{ color: "orange" }}>
               0.00000343345
             </h2>
             <p style={{ fontSize: "10px" }} className="fw-semibold text-end">
@@ -50,7 +50,7 @@ const UserProfile = () => {
         {/* RIGHT SIDE COIN DETAILS */}
         <div className="d-flex align-items-center gap-2 p-2 gradient-black rounded">
           <div>
-            <h2 className="fs-6 fw-bold text-end" style={{ color: "yellow" }}>
+            <h2 className="fs-6 fw-bold text-end" style={{ color: "white" }}>
               0.00000343345
             </h2>
             <p style={{ fontSize: "10px" }} className="fw-semibold text-end">

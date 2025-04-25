@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className=":uno: tab-bar-wrap tab-bar-wrap-26 fixed bottom-0 z-2">
       <nav className="tab-bar">
-        <NavLink
+        {/* <NavLink
           to="/home"
           className="tab-item"
           style={{ backgroundColor: "#0b3ab3" }}
@@ -36,7 +36,7 @@ const Navbar = () => {
               {t("home")}
             </div>
           </div>
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to="/user-dashboard"
           className="tab-item"
@@ -53,6 +53,21 @@ const Navbar = () => {
           </div>
         </NavLink>
         <NavLink
+          to="/contracts"
+          className="tab-item"
+          style={{ backgroundColor: "#0b3ab3" }}
+        >
+          <div tab-btn="" id="tabItem" className="tab-item-inner">
+            <div
+              tab-btn=""
+              className="tab-item-icon i-mdi:home-circle c-$text-gray"
+            ></div>
+            <div tab-btn="" className="tab-item-label">
+              {t("Contracts")}
+            </div>
+          </div>
+        </NavLink>
+        {/* <NavLink
           to="/task"
           className="tab-item"
           style={{ backgroundColor: "#0b3ab3" }}
@@ -66,8 +81,8 @@ const Navbar = () => {
               {t("task")}
             </div>
           </div>
-        </NavLink>
-        <NavLink
+        </NavLink> */}
+        {/* <NavLink
           to="/team"
           className="tab-item"
           style={{ backgroundColor: "#0b3ab3" }}
@@ -82,7 +97,7 @@ const Navbar = () => {
               {t("team")}
             </div>
           </div>
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to="/vip"
           className="tab-item"

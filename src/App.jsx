@@ -41,6 +41,7 @@ import ChangePassword from "./component/changePassword";
 import AuthRoute from "./component/auth/AuthRoute";
 import Agreement from "./component/extra/Agreement";
 import Dashboard from "./component/pages/Dashboard/Dashboard";
+import Contracts from "./component/pages/Contracts/Contracts";
 
 //fmining.myway66.com
 
@@ -252,6 +253,14 @@ function App() {
               element={
                 <PrivateRoute>
                   <Dashboard />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/contracts"
+              element={
+                <PrivateRoute>
+                  <Contracts />
                 </PrivateRoute>
               }
             />

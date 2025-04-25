@@ -3,6 +3,7 @@ import image from "../../../assets/images/features/choosedImg.png";
 import "./dashboard.css";
 import { useState } from "react";
 import DashboardModal from "./DashboardModal";
+import Navbar from "../../partial/navbar";
 
 const Dashboard = () => {
   const [modalShow, setModalShow] = useState(false);
@@ -22,6 +23,9 @@ const Dashboard = () => {
         >
           Mining Contract
         </button>
+      </div>
+      <div style={{ marginTop: "60px" }}>
+        <Navbar />
       </div>
       <DashboardModal show={modalShow} onHide={() => setModalShow(false)} />
     </div>
