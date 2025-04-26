@@ -2,6 +2,9 @@ import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios"; // Optional, if using Axios
+import { IoIosHome } from "react-icons/io";
+import { TbContract } from "react-icons/tb";
+import { RiUserSharedFill } from "react-icons/ri";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -20,7 +23,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className=":uno: tab-bar-wrap tab-bar-wrap-26 fixed bottom-0 z-2">
+    <div className=":uno: tab-bar-wrap  tab-bar-wrap-26 fixed bottom-0 z-2">
       <nav className="tab-bar">
         {/* <NavLink
           to="/home"
@@ -42,11 +45,12 @@ const Navbar = () => {
           className="tab-item"
           style={{ backgroundColor: "#0b3ab3" }}
         >
-          <div tab-btn="" id="tabItem" className="tab-item-inner">
-            <div
-              tab-btn=""
-              className="tab-item-icon i-mdi:home-circle c-$text-gray"
-            ></div>
+          <div
+            tab-btn=""
+            id="tabItem"
+            className="tab-item-inner d-flex flex-column"
+          >
+            <IoIosHome size={20} />
             <div tab-btn="" className="tab-item-label">
               {t("Dashboard")}
             </div>
@@ -57,13 +61,30 @@ const Navbar = () => {
           className="tab-item"
           style={{ backgroundColor: "#0b3ab3" }}
         >
-          <div tab-btn="" id="tabItem" className="tab-item-inner">
-            <div
-              tab-btn=""
-              className="tab-item-icon i-mdi:home-circle c-$text-gray"
-            ></div>
+          <div
+            tab-btn=""
+            id="tabItem"
+            className="tab-item-inner d-flex flex-column"
+          >
+            <TbContract size={20} />
             <div tab-btn="" className="tab-item-label">
               {t("Contracts")}
+            </div>
+          </div>
+        </NavLink>
+        <NavLink
+          to="/referral"
+          className="tab-item"
+          style={{ backgroundColor: "#0b3ab3" }}
+        >
+          <div
+            tab-btn=""
+            id="tabItem"
+            className="tab-item-inner d-flex flex-column"
+          >
+            <RiUserSharedFill size={20} />
+            <div tab-btn="" className="tab-item-label">
+              {t("Referral")}
             </div>
           </div>
         </NavLink>

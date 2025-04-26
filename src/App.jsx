@@ -42,6 +42,7 @@ import AuthRoute from "./component/auth/AuthRoute";
 import Agreement from "./component/extra/Agreement";
 import Dashboard from "./component/pages/Dashboard/Dashboard";
 import Contracts from "./component/pages/Contracts/Contracts";
+import Referall from "./component/pages/Referral/Referall";
 
 //fmining.myway66.com
 
@@ -261,6 +262,14 @@ function App() {
               element={
                 <PrivateRoute>
                   <Contracts />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/referral"
+              element={
+                <PrivateRoute>
+                  <Referall />
                 </PrivateRoute>
               }
             />
