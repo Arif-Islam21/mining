@@ -5,6 +5,7 @@ import axios from "axios"; // Optional, if using Axios
 import { IoIosHome } from "react-icons/io";
 import { TbContract } from "react-icons/tb";
 import { RiUserSharedFill } from "react-icons/ri";
+import { BiMoneyWithdraw } from "react-icons/bi";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -88,6 +89,22 @@ const Navbar = () => {
             </div>
           </div>
         </NavLink>
+        <NavLink
+          to="/withdrawal-amount"
+          className="tab-item"
+          style={{ backgroundColor: "#0b3ab3" }}
+        >
+          <div
+            tab-btn=""
+            id="tabItem"
+            className="tab-item-inner d-flex flex-column"
+          >
+            <BiMoneyWithdraw size={20} />
+            <div tab-btn="" className="tab-item-label">
+              {t("Withdrawal")}
+            </div>
+          </div>
+        </NavLink>
         {/* <NavLink
           to="/task"
           className="tab-item"
@@ -119,7 +136,7 @@ const Navbar = () => {
             </div>
           </div>
         </NavLink> */}
-        <NavLink
+        {/* <NavLink
           to="/vip"
           className="tab-item"
           style={{ backgroundColor: "#0b3ab3" }}
@@ -134,7 +151,7 @@ const Navbar = () => {
               {t("vip")}
             </div>
           </div>
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to="/me"
           className="tab-item"

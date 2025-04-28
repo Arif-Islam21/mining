@@ -43,6 +43,7 @@ import Agreement from "./component/extra/Agreement";
 import Dashboard from "./component/pages/Dashboard/Dashboard";
 import Contracts from "./component/pages/Contracts/Contracts";
 import Referall from "./component/pages/Referral/Referall";
+import Withdrawal from "./component/pages/Withdrawal/Withdrawal";
 
 //fmining.myway66.com
 
@@ -270,6 +271,14 @@ function App() {
               element={
                 <PrivateRoute>
                   <Referall />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/withdrawal-amount"
+              element={
+                <PrivateRoute>
+                  <Withdrawal />
                 </PrivateRoute>
               }
             />

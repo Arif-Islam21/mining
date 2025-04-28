@@ -1,0 +1,69 @@
+.back-btn {
+  background-color: #0000006a;
+  border-radius: 50%;
+  max-width: fit-content;
+}
+
+.history-btn {
+  color: orange;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.warn {
+  background-color: rgba(208, 214, 37, 0.479);
+  padding: 10px;
+  margin: 14px 0;
+  border-radius: 12px;
+  color: gray;
+}
+.text-gray {
+  color: gray;
+}
+.text-small {
+  font-size: 15px;
+}
+.form-input {
+  margin: 8px 0;
+}
+
+.form-input input::placeholder {
+  color: gray;
+  background-color: transparent;
+}
+.form-input input {
+  background-color: rgba(181, 174, 174, 0.58);
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 7px;
+}
+.all-amount {
+  position: absolute;
+  background-color: transparent;
+  bottom: 50%;
+  right: 20px;
+  transform: translateY(50%);
+}
+
+.withdraw-btn {
+  padding: 8px 14px;
+  background-color: orange;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.binance-img {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.select-item {
+  background-color: rgba(181, 174, 174, 0.58);
+  padding: 8px 18px;
+}
