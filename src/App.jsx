@@ -252,14 +252,6 @@ function App() {
             {/* NEW ROUTES */}
 
             <Route
-              path="/contracts"
-              element={
-                <PrivateRoute>
-                  <Contracts />
-                </PrivateRoute>
-              }
-            />
-            <Route
               path="/referral"
               element={
                 <PrivateRoute>

@@ -1,0 +1,38 @@
+.contract-wrapper {
+  /* background: #0b1c33; */
+  background-color: transparent;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.contract-card {
+  /* background-color: transparent; */
+  background-color: #131f35;
+  border-radius: 8px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot.active {
+  background-color: #00ff00;
+}
+
+.status-dot.inactive {
+  background-color: #ff0000;
+}
+
+.btc-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 10px;
+}
+
+.pc-img {
+  margin: 0 auto;
+}

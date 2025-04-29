@@ -32,6 +32,13 @@ import LanguagePopUp from "./extra/LanguagePopUp";
 import TelegramPopUp from "./extra/TelegramPopUp";
 import LevelCards from "./LevelCards";
 
+import referImg from "../assets/images/features/refer.webp";
+import "../styles/team.css";
+import Invite from "./pages/Referral/Invite";
+import ReferralReward from "./pages/Referral/ReferralReward";
+import { BiCopy } from "react-icons/bi";
+import InvitationHistory from "./pages/Referral/InvitationHistory";
+
 const Team = () => {
   const { t } = useTranslation();
   const [data, setData] = useState({});
@@ -97,7 +104,36 @@ const Team = () => {
           selectedLanguage={selectedLanguage}
           toggleLangPopup={toggleLangPopup}
         ></Header>
-        <div team-page="" className="team-wrap">
+
+        {/* NEW DESIGNS ARE HERE */}
+
+        <div>
+          <div className="lg-max-w-md mx-auto">
+            <img
+              src={referImg}
+              alt="refer image"
+              className="refer-top-img rounded"
+            />
+          </div>
+          <Invite />
+          <ReferralReward />
+          <div className="d-flex py-3 refer-step-text my-2 align-items-center justify-content-between gap-3">
+            <h3 className="">Invitation Code</h3>
+
+            <div className="d-flex align-items-center gap-2">
+              <h3 className="fw-bold">29058503</h3>
+              <BiCopy size={18} />
+            </div>
+          </div>
+          <div className="mb-4">
+            <InvitationHistory />
+          </div>
+        </div>
+
+        {/* NEW DESIGN ENDS HERE */}
+
+        {/* PREVIOUS DESIGN ARE HERE DELETE IF YOU DON'T NEED THEM */}
+        {/* <div team-page="" className="team-wrap">
           <div team-page="" className="team-wrap-content">
             <div team-page="" className="share-card">
               <div team-page="" className="share-card-container">
@@ -124,7 +160,6 @@ const Team = () => {
                 </div>
               </div>
             </div>
-            {/* share-card ends */}
             <div
               team-page=""
               className="my-10px mt-15px flex cursor-pointer items-center text-[var(--btn-text"
@@ -139,7 +174,6 @@ const Team = () => {
                 </span>
               </div>
             </div>
-            {/* date filter endsss */}
             <div
               team-page=""
               className=":uno: container-card relative rd-$card-radius p-$mg c-$btn-text team-info"
@@ -205,11 +239,10 @@ const Team = () => {
                 </div>
 
               </div>
-              {/* team info content ends  */}
             </div>
-            {/* team-card ends */}
           </div>
-        </div>
+        </div> */}
+        {/* PREVIOUS DESIGN ENDS HERE DELETE IF YOU WANT */}
         {isCopied && (
           <div
             id="copyModal"
@@ -220,7 +253,7 @@ const Team = () => {
             <div className="van-toast__text">Copied successfully</div>
           </div>
         )}
-        <LevelCards data={data}/>
+        {/* <LevelCards data={data} /> */}
         <CustomLoader />
         <Navbar />
       </div>

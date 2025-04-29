@@ -41,54 +41,7 @@ const Navbar = () => {
             </div>
           </div>
         </NavLink>
-        <NavLink
-          to="/contracts"
-          className="tab-item"
-          style={{ backgroundColor: "#0b3ab3" }}
-        >
-          <div
-            tab-btn=""
-            id="tabItem"
-            className="tab-item-inner d-flex flex-column"
-          >
-            <TbContract size={20} />
-            <div tab-btn="" className="tab-item-label">
-              {t("Contracts")}
-            </div>
-          </div>
-        </NavLink>
-        <NavLink
-          to="/referral"
-          className="tab-item"
-          style={{ backgroundColor: "#0b3ab3" }}
-        >
-          <div
-            tab-btn=""
-            id="tabItem"
-            className="tab-item-inner d-flex flex-column"
-          >
-            <RiUserSharedFill size={20} />
-            <div tab-btn="" className="tab-item-label">
-              {t("Referral")}
-            </div>
-          </div>
-        </NavLink>
-        <NavLink
-          to="/withdrawal-amount"
-          className="tab-item"
-          style={{ backgroundColor: "#0b3ab3" }}
-        >
-          <div
-            tab-btn=""
-            id="tabItem"
-            className="tab-item-inner d-flex flex-column"
-          >
-            <BiMoneyWithdraw size={20} />
-            <div tab-btn="" className="tab-item-label">
-              {t("Withdrawal")}
-            </div>
-          </div>
-        </NavLink>
+
         <NavLink
           to="/task"
           className="tab-item"

@@ -4,7 +4,7 @@ import { TiGroup } from "react-icons/ti";
 
 const InvitationHistory = () => {
   return (
-    <Card className="w-100 mt-3 refer-card" style={{ width: "18rem" }}>
+    <Card className="w-100 mt-3 py-3 refer-card" style={{ width: "18rem" }}>
       <Card.Body>
         <Card.Title className="text-white fw-bold">
           Invitation History

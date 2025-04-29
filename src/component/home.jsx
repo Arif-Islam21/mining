@@ -23,7 +23,7 @@ import CountdownTimer from "./extra/CountdownTimer";
 // import SupportLink from "./extra/supportLink";
 import Announcement from "./extra/anouncement";
 import CustomLoader from "./extra/customLoader";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Header from "./extra/Header";
 import HomeUserInfo from "./extra/home/HomeUserInfo";
 import HomeNotice from "./extra/home/HomeNotice";
@@ -119,12 +119,13 @@ const home = () => {
               alt="Chosen Image"
               className="rounded battery-img mt-3"
             />
-            <button
+            <Link
+              to="/recharge-method"
               onClick={() => setModalShow(true)}
               className="btn mining-btn-style mining-btn"
             >
               Mining Contract
-            </button>
+            </Link>
           </div>
 
           {/* NEW DESIGNS END HERE */}
@@ -136,43 +137,6 @@ const home = () => {
           {/* <div className="reative my-$mg text-center text-2xl font-bold text-$btn-text"></div> */}
           {/* <HomeTaskHall showPopup={showPopup} userData={data}></HomeTaskHall> */}
           <br />
-          {/* <div
-            className="  align-items-center"
-            style={{
-              backgroundColor: "#fff2b5",
-              borderRadius: "10px",
-              color: "#130040",
-              padding: "15px",
-              textAlign: "center",
-              fontSize: "20px",
-              fontWeight: "600",
-            }}
-          >
-            <div
-              className="justify-content-center"
-              style={{
-                backgroundImage: "url(src/assets/images/stopwatch.png)",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "right bottom",
-              }}
-            >
-              <CountdownTimer targetDate={targetDate} />
-              <h5 className="text-sm">{t("task_reset_countdown")}</h5>
-            </div>
-            <div
-              className="text-end"
-              style={{
-                fontSize: "50px",
-                display: "relative",
-                top: "0",
-                zIndex: "1",
-              }}
-            ></div>
-          </div> */}
-          {/* <VipTaskHall showPopup={showPopup} userData={data}></VipTaskHall> */}
-          {/* <HomeMemberList></HomeMemberList>
-          <HomeRegulator></HomeRegulator> */}
         </div>
         <Navbar></Navbar>
       </div>
