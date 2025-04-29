@@ -67,3 +67,13 @@
   background-color: rgba(181, 174, 174, 0.58);
   padding: 8px 18px;
 }
+
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+}

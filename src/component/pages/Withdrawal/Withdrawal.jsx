@@ -27,7 +27,11 @@ const Withdrawal = () => {
             </h4>
           </div>
           <div className="form-input relative">
-            <input type="text" placeholder="Minimum amount: 0.000022" />
+            <input
+              type="number"
+              className="no-spinner"
+              placeholder="Minimum amount: 0.000022"
+            />
             <button className="all-amount">All</button>
           </div>
         </div>
