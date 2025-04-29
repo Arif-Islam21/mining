@@ -12,7 +12,7 @@
   bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 15rem;
+  min-width: 16rem;
   min-height: 3rem;
 }
 
@@ -153,10 +153,4 @@
 .scroll-container::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
-}
-
-/* STYLES FOR THE BATTERY IMAGE IN DASHBOARD PAGE */
-.battery-img {
-  max-height: 80vh;
-  width: 100%;
 }

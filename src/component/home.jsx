@@ -37,6 +37,10 @@ import LanguagePopUp from "./extra/LanguagePopUp";
 import TelegramPopUp from "./extra/TelegramPopUp";
 import UpgradeLevelAlert from "./extra/UpgradeLevelAlert";
 import VipTaskHall from "./vipTaskHall";
+import UserProfile from "./pages/Dashboard/UserProfile";
+import image from "../assets/images/features/choosedImg.png";
+import "../styles/dashboard.css";
+import DashboardModal from "./pages/Dashboard/DashboardModal";
 
 const home = () => {
   const [data, setData] = useState({});
@@ -81,6 +85,7 @@ const home = () => {
   };
   // upgrade level alert
   const [isUpgradeAlert, setIsUpgradeAlert] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
   const showPopup = () => {
     setIsUpgradeAlert(true);
 
@@ -100,14 +105,38 @@ const home = () => {
           toggleLangPopup={toggleLangPopup}
         ></Header>
         <div className="index-wrap">
+          {/* NEW DESIGN STARTS HERE */}
+          <UserProfile />
+          <div className="flex align-items-center justify-content-end gap-4 text-white">
+            <h4 className="fs-6 underline fw-semibold">Help&FAQ</h4>
+            <h4 className="fs-6 fw-semibold  underline">
+              What is TycoonPoints ?
+            </h4>
+          </div>
+          <div className="relative my-3">
+            <img
+              src={image}
+              alt="Chosen Image"
+              className="rounded battery-img mt-3"
+            />
+            <button
+              onClick={() => setModalShow(true)}
+              className="btn mining-btn-style mining-btn"
+            >
+              Mining Contract
+            </button>
+          </div>
+
+          {/* NEW DESIGNS END HERE */}
+
           {/* <HomeUserInfo userInfo={data}></HomeUserInfo> */}
-          <HomeNotice></HomeNotice>
-          <HomeSlider />
-          <HomeLinks></HomeLinks>
-          <div className="reative my-$mg text-center text-2xl font-bold text-$btn-text"></div>
+          {/* <HomeNotice></HomeNotice> */}
+          {/* <HomeSlider /> */}
+          {/* <HomeLinks></HomeLinks> */}
+          {/* <div className="reative my-$mg text-center text-2xl font-bold text-$btn-text"></div> */}
           {/* <HomeTaskHall showPopup={showPopup} userData={data}></HomeTaskHall> */}
           <br />
-          <div
+          {/* <div
             className="  align-items-center"
             style={{
               backgroundColor: "#fff2b5",
@@ -140,10 +169,10 @@ const home = () => {
                 zIndex: "1",
               }}
             ></div>
-          </div>
-          <VipTaskHall showPopup={showPopup} userData={data}></VipTaskHall>
-          <HomeMemberList></HomeMemberList>
-          <HomeRegulator></HomeRegulator>
+          </div> */}
+          {/* <VipTaskHall showPopup={showPopup} userData={data}></VipTaskHall> */}
+          {/* <HomeMemberList></HomeMemberList>
+          <HomeRegulator></HomeRegulator> */}
         </div>
         <Navbar></Navbar>
       </div>
@@ -165,6 +194,9 @@ const home = () => {
         toggleTelegramPopUp={toggleTelegramPopUp}
       />
       <UpgradeLevelAlert isUpgradeAlert={isUpgradeAlert}></UpgradeLevelAlert>
+
+      {/* NEW MODAL GOES HERE */}
+      <DashboardModal show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   );
 };
