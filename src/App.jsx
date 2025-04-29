@@ -250,14 +250,7 @@ function App() {
             />
 
             {/* NEW ROUTES */}
-            <Route
-              path="/user-dashboard"
-              element={
-                <PrivateRoute>
-                  <Dashboard />
-                </PrivateRoute>
-              }
-            />
+
             <Route
               path="/contracts"
               element={

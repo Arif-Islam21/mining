@@ -42,22 +42,6 @@ const Navbar = () => {
           </div>
         </NavLink>
         <NavLink
-          to="/user-dashboard"
-          className="tab-item"
-          style={{ backgroundColor: "#0b3ab3" }}
-        >
-          <div
-            tab-btn=""
-            id="tabItem"
-            className="tab-item-inner d-flex flex-column"
-          >
-            <IoIosHome size={20} />
-            <div tab-btn="" className="tab-item-label">
-              {t("Dashboard")}
-            </div>
-          </div>
-        </NavLink>
-        <NavLink
           to="/contracts"
           className="tab-item"
           style={{ backgroundColor: "#0b3ab3" }}

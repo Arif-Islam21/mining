@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import logo from "../../assets/images/logo.svg";
 import { useTranslation } from "react-i18next";
 import SupportLink from "./supportLink";
-
+import userProfile from "../../assets/images/features/user.webp";
 
 const Header = ({ toggleLangPopup }) => {
   const [isScrolled, setScroll] = useState(false);
@@ -77,20 +77,32 @@ const Header = ({ toggleLangPopup }) => {
     >
       <div className="nav-bar">
         <div id="navBarItem26" className=":uno: nav-bar-content h-full w-full">
-          <div className="w-full flex items-center justify-center">
-            <div className="left name text-18px!">
-              <div className=":uno: base-logo flex items-center small-logo">
+          <div className="w-full d-flex align-items-center justify-content-between">
+            <div className=" d-flex align-items-center justify-content-center gap-3">
+              {/* USER PROFILE AVATER */}
+              <div
+                className="border-2 border-secondary d-flex align-items-center justify-content-center rounded-circle"
+                style={{ height: "4rem", width: "4rem" }}
+              >
                 <img
-                  className="site-img h-full w-full rd-50%"
-                  src={logo}
-                  alt="logo"
+                  src={userProfile}
+                  alt="User Profile"
+                  className="rounded-circle p-1 bg-secondary"
                 />
               </div>
-              <span className="text-truncate">DLH</span>
+              <div style={{ maxWidth: "fit-content" }}>
+                <h2 className="fs-5 mb-1 fw-semibold">bitTycoon</h2>
+                <p className="px-2 rounded-4" style={{ background: "#4b4d52" }}>
+                  Id: 12345
+                </p>
+              </div>
             </div>
             <div className="right">
               <div>
-                <div className="base-lang-wrap bg-transparent border" onClick={toggleLangPopup}>
+                <div
+                  className="base-lang-wrap bg-transparent border"
+                  onClick={toggleLangPopup}
+                >
                   <div className="i-ph:globe mr-2px text-18px c-$btn-text"></div>
                   <span className="c-$btn-text" id="languageSelect">
                     {displayLanguage} {/* Display the current language */}

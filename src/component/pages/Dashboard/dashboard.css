@@ -1,8 +1,8 @@
 .gradient-black {
   background: linear-gradient(
-    to left,
+    to right,
+    rgba(0, 0, 0, 0.393) 40%,
     black 0%,
-    rgba(0, 0, 0, 0.393),
     transparent 80%
   );
 }
@@ -157,6 +157,6 @@
 
 /* STYLES FOR THE BATTERY IMAGE IN DASHBOARD PAGE */
 .battery-img {
-  max-height: 80vh;
+  max-height: 75vh;
   width: 100%;
 }

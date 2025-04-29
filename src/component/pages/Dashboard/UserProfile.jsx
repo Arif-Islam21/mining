@@ -5,27 +5,8 @@ import bolt from "../../../assets/images/features/bolt.png";
 
 const UserProfile = () => {
   return (
-    <div className="text-white my-3">
+    <div className="text-white mt-4 my-3">
       <div className=" d-flex align-items-center justify-content-between">
-        <div className=" d-flex align-items-center justify-content-center gap-3">
-          {/* USER PROFILE AVATER */}
-          <div
-            className="border-2 border-secondary d-flex align-items-center justify-content-center rounded-circle"
-            style={{ height: "4rem", width: "4rem" }}
-          >
-            <img
-              src={userProfile}
-              alt="User Profile"
-              className="rounded-circle p-1 bg-secondary"
-            />
-          </div>
-          <div style={{ maxWidth: "fit-content" }}>
-            <h2 className="fs-5 mb-1 fw-semibold">bitTycoon</h2>
-            <p className="px-2 rounded-4" style={{ background: "#4b4d52" }}>
-              Id: 12345
-            </p>
-          </div>
-        </div>
         {/* RIGHT SIDE COIN DETAILS */}
         <div className="d-flex align-items-center gap-2 p-2 gradient-black rounded">
           <div>
@@ -45,25 +26,25 @@ const UserProfile = () => {
             />
           </div>
         </div>
-      </div>
-      <div className="d-flex align-items-center border-right justify-content-end">
-        {/* RIGHT SIDE COIN DETAILS */}
-        <div className="d-flex align-items-center gap-2 p-2 gradient-black rounded">
-          <div>
-            <h2 className="fs-6 fw-bold text-end" style={{ color: "white" }}>
-              0.00000343345
-            </h2>
-            <p style={{ fontSize: "10px" }} className="fw-semibold text-end">
-              1BTC = 93,569.73 USD
-            </p>
-          </div>
-          <div>
-            <img
-              style={{ height: "2rem", width: "2rem" }}
-              src={bolt}
-              alt="Ethereum"
-              className="rounded-circle"
-            />
+        <div className="d-flex align-items-center border-right ">
+          {/* RIGHT SIDE COIN DETAILS */}
+          <div className="d-flex align-items-center gap-2 p-2 gradient-black rounded">
+            <div>
+              <h2 className="fs-6 fw-bold text-end" style={{ color: "white" }}>
+                0.00000343345
+              </h2>
+              <p style={{ fontSize: "10px" }} className="fw-semibold text-end">
+                1BTC = 93,569.73 USD
+              </p>
+            </div>
+            <div>
+              <img
+                style={{ height: "2rem", width: "2rem" }}
+                src={bolt}
+                alt="Ethereum"
+                className="rounded-circle"
+              />
+            </div>
           </div>
         </div>
       </div>
