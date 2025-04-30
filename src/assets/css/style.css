@@ -11572,6 +11572,7 @@ textarea {
   --padding: 26px;
   --mg: 16px;
   --bg-card: rgba(255, 255, 255, 0.7);
+  /* --bg-card: #02090F; */
   --bg-weight: rgba(255, 255, 255, 0.19);
   --btn-bg3: #000;
   --btn-text: #010b2e;

@@ -154,3 +154,13 @@
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
 }
+
+.contracts-container {
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+.black-card {
+  background-color: #1e1f2e;
+  color: white;
+}
