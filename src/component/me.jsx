@@ -40,7 +40,7 @@ const HomePage = () => {
   };
 
   const balanceCardStyle = {
-    background: "linear-gradient(135deg, #5b6473, #192333)",
+    background: "linear-gradient(135deg, #6c63ff, #1e1e2f)",
     borderRadius: "20px",
     padding: "20px",
     color: "white",
@@ -48,13 +48,14 @@ const HomePage = () => {
   };
 
   const userCardStyle = {
-    background: "linear-gradient(135deg, #9aff8d, #6adb5c)",
+    background: "linear-gradient(135deg, #4fb3bf, #2e3b55)",
     borderRadius: "20px 20px 0px 0px",
     padding: "15px 15px 30px 15px",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: "-20px",
+    color: "#ffffff",
   };
 
   const menuStyle = {
@@ -77,10 +78,18 @@ const HomePage = () => {
     background: "white",
     borderRadius: "20px 20px 0px 0px",
     overflow: "hidden",
-    paddingBottom: "300px",
+    paddingBottom: "100px",
   };
 
   const menuItemStyle = {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "10px 0px",
+    color: "white",
+    textDecoration: "none",
+  };
+  const menuItemStyleBottom = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
@@ -220,7 +229,10 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div style={balanceCardStyle}>
+          <div
+            className="d-flex align-items-center justify-content-around"
+            style={balanceCardStyle}
+          >
             <div style={{ marginBottom: "15px" }}>
               <div style={{ fontSize: "24px", fontWeight: "bold" }}>
                 {data?.user?.refers || 0}
@@ -245,18 +257,10 @@ const HomePage = () => {
             <div style={{ fontSize: "15px", color: "#000" }}>
               {formatEmailOrPhone(data?.user?.email || data?.user?.phone)}
             </div>
-            <div style={vipBadgeStyle}>DLH{data?.user?.my_vip}</div>
+            <div style={vipBadgeStyle}>TYCOON{data?.user?.my_vip}</div>
           </div>
 
           <div style={menuStyle}>
-            {/* <Link to="/wallet-address" style={menuItemStyle}>
-              <div style={menuTextStyle}>
-                <span style={iconStyle}>
-                  <FaWallet size={20} />
-                </span>
-                <span>{t("Wallet")}</span>
-              </div>
-            </Link> */}
             <Link to="/account" style={menuItemStyle}>
               <div style={menuTextStyle}>
                 <span style={iconStyle}>
@@ -294,7 +298,7 @@ const HomePage = () => {
             </Link>
           </div>
           <div style={menuStyle2}>
-            <Link to="/change-password" style={menuItemStyle}>
+            <Link to="/change-password" style={menuItemStyleBottom}>
               <div style={menuTextStyle2}>
                 <span style={iconStyle2}>
                   <div className="icon i-ph:password-light c-#1b49b9"></div>
@@ -304,7 +308,7 @@ const HomePage = () => {
             </Link>
             <div
               style={{
-                ...menuItemStyle,
+                ...menuItemStyleBottom,
                 borderBottom: "none",
                 cursor: "pointer",
               }}
