@@ -203,7 +203,7 @@ const vip = () => {
               return (
                 <div
                   vip-page=""
-                  className=":uno: container-card relative rd-$card-radius p-$mg black-card c-$btn-text"
+                  className=":uno: container-card relative rd-$card-radius p-$mg c-$btn-text"
                   key={index}
                 >
                   <div vip-page="" className="level-name">
@@ -235,7 +235,7 @@ const vip = () => {
                           alt="vip-img"
                         />
                       </div>
-                      <div vip-page="" className="right">
+                      <div vip-page="" className="right right-section-design">
                         <div vip-page="" className="item">
                           <div vip-page="" className="title">
                             <em vip-page=""></em>
@@ -319,7 +319,7 @@ const vip = () => {
         </div>
         {/* PREVIOUS STYLES ENDS HERE */}
 
-        <div className="">
+        {/* <div className="">
           <div className="body-of-modal p-3 contracts-container">
             <div className="d-flex align-items-center mt-2 w-100 justify-content-between">
               <h2 className="fs-5 fw-semibold">Free Contract</h2>
@@ -332,7 +332,6 @@ const vip = () => {
               </p>
             </div>
 
-            {/* STATS SECTION */}
             <Row className="gx-2 gy-3 my-3 justify-content-center">
               <Col xs={12} md={6}>
                 <Card className="mining-card text-white">
@@ -369,7 +368,6 @@ const vip = () => {
               </Col>
             </Row>
 
-            {/* POPULAR CONTRACTS */}
             <div className="popular-section px-3 py-2">
               <h6 className="section-title mb-2">Popular Contract</h6>
               <div className="scroll-container">
@@ -413,7 +411,7 @@ const vip = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <CustomLoader />
         <Navbar />

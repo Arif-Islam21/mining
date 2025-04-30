@@ -107,7 +107,7 @@ const Team = () => {
 
         {/* NEW DESIGNS ARE HERE */}
 
-        <div>
+        {/* <div>
           <div className="lg-max-w-md mx-auto">
             <img
               src={referImg}
@@ -128,12 +128,12 @@ const Team = () => {
           <div className="mb-4">
             <InvitationHistory />
           </div>
-        </div>
+        </div> */}
 
         {/* NEW DESIGN ENDS HERE */}
 
         {/* PREVIOUS DESIGN ARE HERE DELETE IF YOU DON'T NEED THEM */}
-        {/* <div team-page="" className="team-wrap">
+        <div team-page="" className="team-wrap">
           <div team-page="" className="team-wrap-content">
             <div team-page="" className="share-card">
               <div team-page="" className="share-card-container">
@@ -178,8 +178,11 @@ const Team = () => {
               team-page=""
               className=":uno: container-card relative rd-$card-radius p-$mg c-$btn-text team-info"
             >
-              <div team-page="" className="team-info-content" style={{background: '#ffed9a'}}>
-
+              <div
+                team-page=""
+                className="team-info-content"
+                style={{ background: "#ffed9a" }}
+              >
                 <div team-page="" className="other-num">
                   <div team-page="" className="item">
                     <div team-page="" className="text-df">
@@ -208,7 +211,6 @@ const Team = () => {
                 </div>
 
                 <div team-page="" className="other-num">
-
                   <div team-page="" className="item">
                     <div team-page="" className="text-df">
                       {t("new_team")}
@@ -235,13 +237,11 @@ const Team = () => {
                       {data.firstTimeWithdraw || "0"}
                     </div>
                   </div>
-                  
                 </div>
-
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
         {/* PREVIOUS DESIGN ENDS HERE DELETE IF YOU WANT */}
         {isCopied && (
           <div
@@ -253,7 +253,7 @@ const Team = () => {
             <div className="van-toast__text">Copied successfully</div>
           </div>
         )}
-        {/* <LevelCards data={data} /> */}
+        <LevelCards data={data} />
         <CustomLoader />
         <Navbar />
       </div>

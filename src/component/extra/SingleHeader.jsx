@@ -11,7 +11,11 @@ const SingleHeader = () => {
 
   return (
     <div>
-      <div nav1="" className="navigation " style={{backgroundColor: "#346dff"}}>
+      <div
+        nav1=""
+        className="navigation "
+        style={{ backgroundColor: "#0e224a" }}
+      >
         <div nav1="" className="navigation-content">
           <div
             nav1=""

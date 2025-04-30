@@ -41,7 +41,7 @@ const Withdraw = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get("api/withdraw");
-        setAddress(response.data.user.crypto_address || '');
+        setAddress(response.data.user.crypto_address || "");
         setData(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -119,7 +119,7 @@ const Withdraw = () => {
           <div className=":uno: container-card relative rd-$card-radius p-$mg c-$btn-text text-black">
             <div className=":uno: flex items-center justify-between">
               <div className=":uno: shrink-0">
-                <div className=":uno: text-left text-18px">
+                <div className=":uno: text-left text-white text-18px">
                   {t("withdrawal_account")}
                 </div>
                 <div className=":uno: text-left text-13px lh-20px c-red">
@@ -143,25 +143,26 @@ const Withdraw = () => {
             )}
             {isLoading ? <CustomLoader isLoading={isLoading} /> : null}
             <div className="number">
-              <div className="title">{t("total_balance")}</div>
-              <div className="num" style={{color: 'blue'}}>
+              <div className="title text-white">{t("total_balance")}</div>
+              <div className="num" style={{ color: "blue" }}>
                 {data?.user?.withdraw_balance || 0}
-                <span style={{color: 'blue'}}>USDT</span>
+                <span style={{ color: "blue" }}>USDT</span>
               </div>
             </div>
             {/* number ends */}
             <div className="pay-type align-items-center mb-10px">
-              <div className="shrink-0">{t("withdrawal_method")}:</div>
+              <div className="shrink-0 text-white">
+                {t("withdrawal_method")}:
+              </div>
               <div className="flex flex-wrap items-center">
                 <Link
                   to="/withdraw"
                   id="trc20Usdt"
-                  className="ml-5px mr-10px inline-block h-30px cursor-pointer border border-$text-gray rd border-solid px-15px leading-30px text-white border-$primary! text-$btn-text" 
-                  style={{background: "blue"}}
+                  className="ml-5px mr-10px inline-block h-30px cursor-pointer border border-$text-gray rd border-solid px-15px leading-30px text-white border-$primary! text-$btn-text"
+                  style={{ background: "blue" }}
                 >
                   BEP20-USDT
                 </Link>
-
               </div>
             </div>
             {/* Withdrawal method ends */}
@@ -173,7 +174,7 @@ const Withdraw = () => {
                     type="number"
                     step="0.01"
                     placeholder={`${t("quota")} 1.00 - 30000.00`}
-                    className="w-full"
+                    className="w-full text-black"
                     name="quota"
                     value={quota}
                     onChange={handleQuotaChange}
@@ -189,7 +190,7 @@ const Withdraw = () => {
                   <textarea
                     type="text"
                     placeholder={t("withdrawal_address")}
-                    className="w-full"
+                    className="w-full text-black"
                     name="address"
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
@@ -205,7 +206,7 @@ const Withdraw = () => {
                   <input
                     type="password"
                     placeholder={t("password")}
-                    className="w-full withdraw_password"
+                    className="w-full text-black withdraw_password"
                     name="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
@@ -225,7 +226,7 @@ const Withdraw = () => {
                     {t("handling_fees")}
                   </span>
                   <div className="text-right text-sm">
-                    <div className="">
+                    <div className="text-white">
                       {data?.settingtrx?.withdraw_vat || 0} USDT
                     </div>
                   </div>
@@ -234,14 +235,16 @@ const Withdraw = () => {
                   <span className="text-sm text-$text-gray">
                     {t("actually_received")}
                   </span>
-                  <div className="text-sm">{actuallyReceived} USDT</div>
+                  <div className="text-sm text-white">
+                    {actuallyReceived} USDT
+                  </div>
                 </div>
                 <button
                   type="submit"
                   className=":uno: base-main-btn flex items-center justify-center"
                   disabled={isLoading}
                 >
-                  <div className="base-main-btn-content">
+                  <div className="base-main-btn-content text-white ">
                     <span>{t("confirm")}</span>
                   </div>
                 </button>

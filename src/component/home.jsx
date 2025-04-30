@@ -120,7 +120,7 @@ const home = () => {
               className="rounded battery-img mt-3"
             />
             <Link
-              to="/recharge-method"
+              to="/vip"
               onClick={() => setModalShow(true)}
               className="btn mining-btn-style mining-btn"
             >

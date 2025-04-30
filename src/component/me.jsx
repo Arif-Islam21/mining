@@ -249,14 +249,14 @@ const HomePage = () => {
           </div>
 
           <div style={menuStyle}>
-            <Link to="/wallet-address" style={menuItemStyle}>
+            {/* <Link to="/wallet-address" style={menuItemStyle}>
               <div style={menuTextStyle}>
                 <span style={iconStyle}>
                   <FaWallet size={20} />
                 </span>
                 <span>{t("Wallet")}</span>
               </div>
-            </Link>
+            </Link> */}
             <Link to="/account" style={menuItemStyle}>
               <div style={menuTextStyle}>
                 <span style={iconStyle}>

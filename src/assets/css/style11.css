@@ -35164,6 +35164,8 @@
   margin-left: 10px;
   max-width: calc(100% - 110px);
   background: rgba(0, 0, 0, 0.05);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.75);
   padding: 10px;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);

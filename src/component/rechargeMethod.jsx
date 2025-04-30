@@ -94,7 +94,6 @@ const rechargeMethod = () => {
     fetchData();
   }, []);
 
-
   return (
     <div id="app" className="a-t-26 no-4">
       <div className="box-border min-h-full w-full pt-45px">
@@ -104,14 +103,18 @@ const rechargeMethod = () => {
             rc-page=""
             className=":uno: container-card relative rd-$card-radius p-$mg c-$btn-text mt-12px px-12px py-0"
           >
-            <Link rc-page="" className="recharge-item" to={`/recharge?method=USDT`}>
+            <Link
+              rc-page=""
+              className="recharge-item"
+              to={`/recharge?method=USDT`}
+            >
               <div rc-page="" className="flex items-center">
                 <img
                   rc-page=""
                   src={trc20}
                   className="h-26.48px w-26.48px shrink-0"
                 />
-                <span rc-page="" className="name text-black">
+                <span rc-page="" className="name text-white ">
                   TRC20-USDT
                 </span>
               </div>
@@ -122,14 +125,18 @@ const rechargeMethod = () => {
                 ></div>
               </div>
             </Link>
-            <Link rc-page="" className="recharge-item" to={`/recharge?method=TRX`}>
+            <Link
+              rc-page=""
+              className="recharge-item"
+              to={`/recharge?method=TRX`}
+            >
               <div rc-page="" className="flex items-center">
                 <img
                   rc-page=""
                   src={trx}
                   className="h-26.48px w-26.48px shrink-0"
                 />
-                <span rc-page="" className="name text-black">
+                <span rc-page="" className="name text-white ">
                   TRX
                 </span>
               </div>
@@ -140,14 +147,18 @@ const rechargeMethod = () => {
                 ></div>
               </div>
             </Link>
-            <Link rc-page="" className="recharge-item" to={`/recharge?method=BEP20`}>
+            <Link
+              rc-page=""
+              className="recharge-item"
+              to={`/recharge?method=BEP20`}
+            >
               <div rc-page="" className="flex items-center">
                 <img
                   rc-page=""
                   src={bep20}
                   className="h-26.48px w-26.48px shrink-0"
                 />
-                <span rc-page="" className="name text-black">
+                <span rc-page="" className="name text-white ">
                   BEP20-USDT
                 </span>
               </div>
@@ -158,14 +169,18 @@ const rechargeMethod = () => {
                 ></div>
               </div>
             </Link>
-            <Link rc-page="" className="recharge-item" to={`/recharge?method=BNB`}>
+            <Link
+              rc-page=""
+              className="recharge-item"
+              to={`/recharge?method=BNB`}
+            >
               <div rc-page="" className="flex items-center">
                 <img
                   rc-page=""
                   src={bnb}
                   className="h-26.48px w-26.48px shrink-0"
                 />
-                <span rc-page="" className="name text-black">
+                <span rc-page="" className="name text-white ">
                   BNB
                 </span>
               </div>

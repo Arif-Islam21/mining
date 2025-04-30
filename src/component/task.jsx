@@ -142,7 +142,7 @@ const task = () => {
         {isLoader ? <Loader /> : null}
 
         {/* NEW DESIGNS STARTS HERE */}
-        <div>
+        {/* <div>
           <UserProfile />
           <div className="pc-img-container">
             <img className="pc-img" src={img} alt="this is the main image" />
@@ -193,13 +193,13 @@ const task = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* NEW DESIGNS ENDS HERE */}
 
-        <div task-page="" className="mission-wrap mission-wrap21">
+        <div task-page="" className="mission-wrap mission-wrap21 my-3">
           <div task-page="" className="mission-wrap-content">
-            {/* <div
+            <div
               id="timer"
               task-page=""
               className="text-center"
@@ -231,8 +231,8 @@ const task = () => {
                   <CountdownTimer targetDate={targetDate} />
                 </span>
               </div>
-            </div> */}
-            {/* <div
+            </div>
+            <div
               task-page=""
               className="top-info"
               style={{
@@ -263,9 +263,9 @@ const task = () => {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
             {/* top-info ends */}
-            {/* <div
+            <div
               task-page=""
               className=":uno: container-card relative rd-$card-radius p-$mg c-$btn-text"
               style={{
@@ -353,7 +353,7 @@ const task = () => {
                   )}
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
 

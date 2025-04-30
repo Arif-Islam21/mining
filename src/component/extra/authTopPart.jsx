@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/features/user.webp";
 import { useTranslation } from "react-i18next";
-import HoneycombBg from "../../assets/images/honeycomb.png";
+import HoneycombBg from "../../assets/images/features/authentication2.avif";
 
 function authTopPart({ toggleLangPopup, toggleTelegramPopUp }) {
   const { t, i18n } = useTranslation();
@@ -104,7 +104,7 @@ function authTopPart({ toggleLangPopup, toggleTelegramPopUp }) {
                 alt="logo"
               />
               <div className="site-name text-20px flex justify-content-center mt-10px">
-                <span style={{ fontWeight: "bold" }}>DLH</span>
+                <span style={{ fontWeight: "bold" }}>BitTycoon</span>
               </div>
             </div>
           </div>
