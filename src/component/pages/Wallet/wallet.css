@@ -1,0 +1,63 @@
+.bit-bg {
+  background-color: #1854cc;
+  padding: 8px;
+  margin-top: 60px;
+  border-radius: 5px;
+  margin: 60px 40px 10px 40px;
+}
+.tycoon-bg {
+  background-color: #292b42;
+  padding: 8px;
+  margin-top: 60px;
+  border-radius: 5px;
+  margin: 60px 40px 10px 40px;
+}
+
+.wallet-bg {
+  background-color: #181d30;
+  min-height: 100vh;
+}
+
+.coin-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.withdraw-button {
+  font-weight: bold;
+  background-color: whitesmoke;
+  padding: 4px 17px;
+  border-radius: 6px;
+}
+.tycoon-link {
+  color: #0ad293;
+  font-size: medium;
+  font-weight: 500;
+  text-decoration: underline;
+  padding: 0 0.75rem;
+}
+
+.mining-contract-card {
+  background-color: transparent;
+  border: none;
+  border-radius: 12px;
+}
+
+.btc-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.value-text {
+  font-size: 1rem;
+}
+.transection-container {
+  background-color: #0d111c;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.fade-white {
+  color: rgba(240, 248, 255, 0.502);
+}

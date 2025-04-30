@@ -91,8 +91,11 @@ const Header = ({ toggleLangPopup }) => {
                 />
               </div>
               <div style={{ maxWidth: "fit-content" }}>
-                <h2 className="fs-5 mb-1 fw-semibold">bitTycoon</h2>
-                <p className="px-2 rounded-4" style={{ background: "#4b4d52" }}>
+                <h2 className="fs-5 mb-1 text-white fw-semibold">bitTycoon</h2>
+                <p
+                  className="px-2 rounded-4 text-white"
+                  style={{ background: "#4b4d52" }}
+                >
                   Id: 12345
                 </p>
               </div>

@@ -10,6 +10,7 @@ import Header from "./extra/Header";
 import SupportLink from "./extra/supportLink";
 import LanguagePopUp from "./extra/LanguagePopUp";
 import TelegramPopUp from "./extra/TelegramPopUp";
+import { FaWallet } from "react-icons/fa6";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -251,7 +252,7 @@ const HomePage = () => {
             <Link to="/wallet-address" style={menuItemStyle}>
               <div style={menuTextStyle}>
                 <span style={iconStyle}>
-                  <div className="icon i-material-symbols:account-balance-outline-rounded"></div>
+                  <FaWallet size={20} />
                 </span>
                 <span>{t("Wallet")}</span>
               </div>
