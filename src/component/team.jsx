@@ -181,7 +181,9 @@ const Team = () => {
               <div
                 team-page=""
                 className="team-info-content"
-                style={{ background: "#ffed9a" }}
+                style={{
+                  background: "linear-gradient(60deg, #4fb3bf, #2e3b55)",
+                }}
               >
                 <div team-page="" className="other-num">
                   <div team-page="" className="item">

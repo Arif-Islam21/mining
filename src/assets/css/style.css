@@ -11238,7 +11238,8 @@ video {
   --text-black: #000;
   --text-white: #fff;
   --bg-weight: rgba(255, 255, 255, 0.19);
-  --golden-gradient: linear-gradient(60deg, #fcecb9, #efc26f);
+  --golden-gradient: linear-gradient(60deg, #9ea8db, #7a81a3);
+  /* --golden-gradient: linear-gradient(60deg, #fcecb9, #efc26f); */
   --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
