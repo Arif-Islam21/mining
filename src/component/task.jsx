@@ -345,7 +345,7 @@ const task = () => {
                       <div
                         id="comp_nodata"
                         fin-record=""
-                        className="no-more text-center text-black"
+                        className="no-more text-center text-white"
                       >
                         No data
                       </div>
@@ -353,6 +353,47 @@ const task = () => {
                   )}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <img src={img} className="mx-auto" alt="this is the main image" />
+          </div>
+          <div>
+            <div className="contract-wrapper p-3">
+              <div className="d-flex justify-content-between align-items-center mb-3">
+                <h5 className="text-white mb-0">My Contract</h5>
+                <button className="btn btn-warning fw-bold rounded-pill px-3">
+                  + 5.5 Gh/s
+                </button>
+              </div>
+
+              {contracts.map((contract) => (
+                <div
+                  key={contract.id}
+                  className="contract-card p-3 mb-2 d-flex justify-content-between align-items-center"
+                >
+                  <div className="d-flex align-items-center">
+                    <img src={bit} alt="BTC Icon" className="btc-icon me-3" />
+                    <div>
+                      <div className="fw-bold text-white">{contract.speed}</div>
+                      <small className="text-white-50">{contract.reward}</small>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center">
+                    <span
+                      className={`status-dot ${
+                        contract.active ? "active" : "inactive"
+                      }`}
+                    ></span>
+                    <span className="text-white-50 ms-2">
+                      {contract.active ? "active" : "not active"}
+                    </span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

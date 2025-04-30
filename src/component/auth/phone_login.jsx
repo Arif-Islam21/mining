@@ -168,7 +168,7 @@ function App() {
                     // }}
                   >
                     <div className="base-input is-text mt-0!">
-                      <div className="label">{t("phone")}</div>
+                      <div className="label text-white">{t("phone")}</div>
                       <div className="input-box">
                         <div className="input-left-slot">
                           <div className="flex items-center">
@@ -248,7 +248,7 @@ function App() {
                             type="submit"
                             className="base-main-btn-content mx-0 p-3  text-black border-1"
                           >
-                            <div>{t("sign_up")}</div>
+                            <div className="text-white">{t("sign_up")}</div>
                           </button>
                         </Link>
                         <div className="d-flex flex-column align-items-center justify-content-center p-3 mt-2 rounded">
@@ -262,7 +262,7 @@ function App() {
                                 checked ? "text-primary" : "text-muted"
                               }
                             />
-                            <span className="text-black">Agree with our</span>
+                            <span className="text-gray">Agree with our</span>
                           </div>
                           <Link
                             to="/agreement"

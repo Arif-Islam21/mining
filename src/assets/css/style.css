@@ -24619,7 +24619,7 @@ textarea {
 .a-t-26 .base-input .label {
   font-size: 14px;
   margin-bottom: 10px;
-  color: black;
+  color: white;
 }
 
 .a-t-26 .base-input.is-textarea .input-box {
@@ -28398,7 +28398,8 @@ html {
   --vh: 3.59px;
   --text-gray6: #aaa;
   --text-gray: #999;
-  --primary: #1B2946;
+  /* --primary: #1B2946; */
+  --primary: #1a3d94;
   --primary-light: #0e224a;
   --bg: #1B2B4D;
   --bg-card: #0e224a;

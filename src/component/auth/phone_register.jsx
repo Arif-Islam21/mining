@@ -332,7 +332,7 @@ function App() {
                         <Link to="/" className="register cursor-pointer">
                           <button
                             type="submit"
-                            className="base-main-btn-content mx-0 p-3 text-black"
+                            className="base-main-btn-content mx-0 p-3 text-white"
                           >
                             {t("sign_in")}
                           </button>
@@ -348,7 +348,7 @@ function App() {
                                 checked ? "text-primary" : "text-muted"
                               }
                             />
-                            <span className="text-black">Agree with our</span>
+                            <span className="text-gray">Agree with our</span>
                           </div>
                           <Link
                             to="/agreement"

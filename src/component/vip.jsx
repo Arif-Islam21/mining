@@ -239,9 +239,9 @@ const vip = () => {
                         <div vip-page="" className="item">
                           <div vip-page="" className="title">
                             <em vip-page=""></em>
-                            {t("daily_task")}
+                            {t("Hash Rate")}
                           </div>
-                          <div vip-page="" className="value text-black">
+                          <div vip-page="" className="value text-white">
                             1
                           </div>
                         </div>
@@ -260,7 +260,7 @@ const vip = () => {
                             {t("daily_profit")}
                           </div>
                           <div vip-page="" className="value">
-                            <span vip-page="" className="strong text-black">
+                            <span vip-page="" className="strong text-white">
                               {item.income_from}
                             </span>{" "}
                             <span vip-page="" className="unit">
@@ -274,7 +274,7 @@ const vip = () => {
                             {t("the_total_profit")}
                           </div>
                           <div vip-page="" className="value">
-                            <span vip-page="" className="strong text-black">
+                            <span vip-page="" className="strong text-white">
                               {item.income_from * 365}
                             </span>{" "}
                             <span vip-page="" className="unit">
@@ -307,7 +307,7 @@ const vip = () => {
                           <span vip-page="" style={{ marginRight: "16px" }}>
                             {Math.floor(item.requred_from)} USDT
                           </span>
-                          {t("unlock_now")}
+                          {t("Rent Now")}
                         </div>
                       </div>
                     )}

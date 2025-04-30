@@ -236,7 +236,7 @@ const Task = () => {
                         <div
                           id="comp_nodata"
                           fin-record=""
-                          className="no-more text-center text-black"
+                          className="no-more text-center text-white"
                         >
                           No data
                         </div>

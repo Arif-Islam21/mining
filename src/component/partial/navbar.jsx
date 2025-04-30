@@ -53,7 +53,7 @@ const Navbar = () => {
               className="tab-item-icon i-material-symbols:playlist-add-check-circle-rounded c-$text-gray"
             ></div>
             <div tab-btn="" className="tab-item-label">
-              {t("task")}
+              {t("Mining")}
             </div>
           </div>
         </NavLink>
@@ -69,7 +69,7 @@ const Navbar = () => {
             ></div>
 
             <div tab-btn="" className="tab-item-label">
-              {t("team")}
+              {t("Refferal")}
             </div>
           </div>
         </NavLink>
@@ -85,7 +85,7 @@ const Navbar = () => {
             ></div>
 
             <div tab-btn="" className="tab-item-label">
-              {t("vip")}
+              {t("Contracts")}
             </div>
           </div>
         </NavLink>
@@ -100,7 +100,7 @@ const Navbar = () => {
               className="tab-item-icon i-ic:sharp-account-circle c-$text-gray"
             ></div>
             <div tab-btn="" className="tab-item-label">
-              {t("me")}
+              {t("Profile")}
             </div>
           </div>
         </NavLink>
