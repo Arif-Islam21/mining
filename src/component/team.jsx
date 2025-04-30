@@ -244,7 +244,7 @@ const Team = () => {
             </div>
           </div>
         </div>
-        {/* PREVIOUS DESIGN ENDS HERE DELETE IF YOU WANT */}
+
         {isCopied && (
           <div
             id="copyModal"
