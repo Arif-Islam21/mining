@@ -40,7 +40,7 @@ const HomePage = () => {
   };
 
   const balanceCardStyle = {
-    background: "linear-gradient(135deg, #0046b3, #00a1ff)",
+    background: "linear-gradient(135deg, #5b6473, #192333)",
     borderRadius: "20px",
     padding: "20px",
     color: "white",
@@ -197,7 +197,7 @@ const HomePage = () => {
         ></Header>
       </div>
 
-      <div id="app" style={containerStyle}>
+      <div id="app" className="mt-3" style={containerStyle}>
         <div>
           <div style={balanceCardStyle}>
             <div style={{ marginBottom: "15px" }}>

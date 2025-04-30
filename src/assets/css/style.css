@@ -24904,7 +24904,7 @@ textarea {
 }
 .a-t-26 .nav-bar-wrap.is-scroll-state:before {
   content: "";
-  background-color: #203d8a;
+  background-color: #1C2842;
   transition: 0.5s all ease;
 }
 .a-t-26 .layout-tab-bar {
@@ -28398,10 +28398,10 @@ html {
   --vh: 3.59px;
   --text-gray6: #aaa;
   --text-gray: #999;
-  --primary: #e1e9ff;
-  --primary-light: #e7f6f2;
-  --bg: #11466D;
-  --bg-card: #fff;
+  --primary: #1B2946;
+  --primary-light: #1B2946;
+  --bg: #1B2B4D;
+  --bg-card: #1B2946;
   --btn-bg: #483838;
   --btn-bg2: #a9af7e;
   --btn-text: #fff;
